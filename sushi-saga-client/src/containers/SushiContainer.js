@@ -15,9 +15,15 @@ class SushiContainer extends Component {
   }
 
   nextPage = () => {
+    if(this.state.page < 24) {
     this.setState({
       page:this.state.page + 1
     }, () => console.log(this.state.page))
+    } else {
+      this.setState({
+        page:0
+      })
+    }
   }
 
   render() {

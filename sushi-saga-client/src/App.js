@@ -51,7 +51,7 @@ class App extends Component {
 
   addFunds = (funds) => {
     this.setState({
-      budget:this.state.budget+funds
+      budget:this.state.budget+Number(funds)
     })
   }
 
