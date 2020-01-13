@@ -11,12 +11,16 @@ body {
   grid-auto-rows: minmax(100px, auto);
   align-items: center;
   grid-template-areas: 
-      ". . . . ."
+      ". . bb . ."
       ". bt bt bt ."
       ". . rm . ."
       ". tb tb tb .";
 }
 
+.wallet {
+  text-align: center;
+  grid-area: bb
+}
 
 .remaining {
   grid-area: rm;
